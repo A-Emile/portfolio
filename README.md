@@ -10,8 +10,8 @@ yarn build.full
 ```
 ## Build Docker Image
 ```
-docker build -t a-emile-portfolio .
+cd docker && docker build -t a-emile-portfolio .
 ```
 ## Running docker image
 ```
-docker run -p 3000
+docker run -p 3000:3000 a-emile-portfolio

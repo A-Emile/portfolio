@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 
-const PORT = process.env.port | 817
+const PORT = 3000
 
 app.use(express.static(__dirname + '/'));
 app.use('/icons',express.static(__dirname + '/icons'));
@@ -17,4 +17,4 @@ app.use('/', router);
 app.listen(PORT);
 
 console.log('Running at Port ' + PORT);
-console.log(`http://localhost:${PORT}`);
+console.log(`Visit http://localhost:${PORT}`);
