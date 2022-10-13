@@ -1,19 +1,19 @@
 # Portfolio
 
 My personal portfolio website
-## Installing dependencies
+### Installing dependencies
 ```
 yarn install
 ```
 
-## Building static files
+### Building static files
 ```
 yarn build.full
 ```
-## Building Docker Image
+### Building Docker Image
 ```
 docker build -t a-emile-portfolio .
 ```
-## Running docker image
+### Running docker image
 ```
 docker run -p 3000:3000 a-emile-portfolio
