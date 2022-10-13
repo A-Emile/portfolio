@@ -11,7 +11,7 @@ export const RouterHead = component$(() => {
   return (
     <>
       <title>{head.title}</title>
-
+      <meta prefix="og:http://ogp.me/ns#" />
       <link rel="canonical" href={loc.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/png" href="/icons/A-Emile_32x.png" />
