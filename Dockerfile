@@ -4,14 +4,14 @@ FROM node:9-slim
 WORKDIR /app
 ## We copy our package.json file to our
 ## app directory
-COPY package.json /app
+COPY docker/package.json /app
 ## We then run npm install to install
 ## express for our application
 RUN npm install
 ## We then copy the rest of our application
 ## to the app direcoty
-COPY server.js /app
-COPY ../dist /app
+COPY docker/server.js /app
+COPY dist /app
 ## We start our application by calling
 ## npm start.
 CMD ["npm", "start"]
