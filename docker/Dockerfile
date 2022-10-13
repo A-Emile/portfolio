@@ -10,7 +10,8 @@ COPY package.json /app
 RUN npm install
 ## We then copy the rest of our application
 ## to the app direcoty
-COPY . /app
+COPY server.js /app
+COPY ../dist /app
 ## We start our application by calling
 ## npm start.
 CMD ["npm", "start"]
