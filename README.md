@@ -5,7 +5,6 @@ My personal portfolio website
 ```
 yarn install
 ```
-
 ### Building static files
 ```
 yarn build.full
