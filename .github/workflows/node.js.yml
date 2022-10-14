@@ -37,7 +37,7 @@ git config --local user.name "GitHub Action test"
 git add ./app
 git commit -m "Add changes"
 - name: Push changes # push the output folder to your repo
-uses: ad-m/github-push-action@master
+uses: ad-m/github-push-action@main
 with:
 branch: B77 #ignore if your branch is master
 github_token: ${{ secrets.GITHUB_TOKEN }}
