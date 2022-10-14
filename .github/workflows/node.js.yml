@@ -29,16 +29,15 @@ jobs:
     - run: npm install
     - run: npm ci
     - run: npm run build.full --if-present
-run: |
-- name: Commit files # commit the output folder
-run: |
-git config --local user.email "test@github.com"
-git config --local user.name "GitHub Action test"
-git add ./app
-git commit -m "Add changes"
-- name: Push changes # push the output folder to your repo
-uses: ad-m/github-push-action@main
-with:
-branch: B77 #ignore if your branch is master
-github_token: ${{ secrets.GITHUB_TOKEN }}
-force: true
+    - name: Commit files # commit the output folder
+    run |
+    git config --local user.email "test@github.com"
+    git config --local user.name "GitHub Action test"
+    git add ./app
+    git commit -m "Add changes"
+    - name: Push changes # push the output folder to your repo
+    uses: ad-m/github-push-action@main
+    with:
+     branch: B77 #ignore if your branch is master
+     github_token: ${{ secrets.GITHUB_TOKEN }}
+     force: true
