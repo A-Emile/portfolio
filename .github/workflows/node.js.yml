@@ -34,7 +34,7 @@ jobs:
     - run: git add ./app
     - run: git commit -m "Add changes"
     - name: Push changes # push the output folder to your repo
-      uses: A-Emile/portfolio@main
+      uses: stefanzweifel/git-auto-commit-action@v4
       with:
         branch: B77 #ignore if your branch is master
         github_token: ${{ secrets.GITHUB_TOKEN }}
