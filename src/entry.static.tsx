@@ -5,5 +5,5 @@ import { join } from 'path';
 
 qwikCityGenerate(render, {
   origin: 'https://a-emile.dedyn.io',
-  outDir: join(fileURLToPath(import.meta.url), '..', '..', 'dist'),
+  outDir: join(fileURLToPath(import.meta.url), '..', '..', 'app'),
 });
