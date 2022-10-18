@@ -1,17 +1,13 @@
-FROM node:9-slim
-## WORKDIR specifies the directory our
-## application's code will live within
+FROM node:18 as build
 WORKDIR /app
-## We copy our package.json file to our
-## app directory
-COPY docker/package.json /app
-## We then run npm install to install
-## express for our application
-RUN npm install
-## We then copy the rest of our application
-## to the app direcoty
-COPY docker/server.js /app
-COPY dist /app
-## We start our application by calling
-## npm start.
-CMD ["npm", "start"]
+COPY package.json ./
+COPY package-lock.json ./
+RUN yarn install
+COPY . ./
+RUN yarn build.full
+
+# production environment
+FROM nginx:stable-alpine
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
