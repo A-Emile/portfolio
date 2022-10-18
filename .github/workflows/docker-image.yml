@@ -35,4 +35,4 @@ jobs:
        context: .
        file: ./Dockerfile
        push: true
-       tags: ${{ secrets.DOCKER_USERNAME }}/a-emile-portfolio:latest
+       tags: ${{ secrets.DOCKER_USERNAME }}/portfolio:latest
