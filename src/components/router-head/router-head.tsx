@@ -19,8 +19,8 @@ export const RouterHead = component$(() => {
       <meta property="og:site_name" content="A-Emile" />
       <meta name="twitter:site" content="@A-Emile" />
       <meta name="twitter:title" content="A-Emile Portfolio" />
-
-      <meta property="og:title" content="A-Emile - UX Designer &amp; Front-end Developer" />
+      <meta name="twitter:image" content="/og.svg" />
+      <meta property="og:title" content="A-Emile | UX Designer &amp; Front-end Developer" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/og.svg" />
       <meta property="og:url" content="https://a-emile.dedyn.io" />
