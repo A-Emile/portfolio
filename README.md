@@ -15,4 +15,4 @@ docker build -t a-emile-portfolio .
 ```
 ### Running docker image
 ```
-docker run -p 3000:3000 a-emile-portfolio
+docker run -d -p 3000:80 a-emile-portfolio
