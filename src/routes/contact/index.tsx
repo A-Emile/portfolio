@@ -56,7 +56,7 @@ export default component$(() => {
                 <input onInput$={(event) => (state.name = (event.target as HTMLInputElement).value)} type="text" placeholder="Name" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
                 <input onInput$={(event) => (state.email = (event.target as HTMLInputElement).value)} type="email" placeholder="Email" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
             </div>
-            <textarea onInput$={(event) => (state.msg = (event.target as HTMLInputElement).value)} placeholder="Nachricht" class="bg-transparent border-2 border-primary border-opacity-50 rounded"></textarea>
+            <textarea onInput$={(event) => (state.msg = (event.target as HTMLInputElement).value)} placeholder="Message" class="bg-transparent border-2 border-primary border-opacity-50 rounded"></textarea>
             <Button onClick$={() => state.submit = true} text="Send" />
 
         </div>
