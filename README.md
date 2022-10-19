@@ -5,7 +5,7 @@ My personal portfolio website
 ```
 docker pull emile17/portfolio
 ```
-## Running docker image
+## Run docker image
 ```
 docker run -d --restart=always --name portfolio -p 3000:80 a-emile-portfolio
 ```
