@@ -1,18 +1,15 @@
 # Portfolio
 
 My personal portfolio website
-### Installing dependencies
+## Pull Docker Image
 ```
-yarn install
+docker pull emile17/portfolio
 ```
-### Building static files
+## Running docker image
 ```
-yarn build.full
+docker run -d --restart=always --name portfolio -p 3000:80 a-emile-portfolio
 ```
-### Building Docker Image
+## Build Docker Image
 ```
-docker build -t a-emile-portfolio .
+docker build -t portfolio .
 ```
-### Running docker image
-```
-docker run -d -p 3000:80 a-emile-portfolio
