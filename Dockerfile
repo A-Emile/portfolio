@@ -4,7 +4,7 @@ COPY package.json ./
 COPY yarn.lock ./
 RUN yarn install
 COPY . ./
-RUN yarn build.full
+RUN yarn build
 
 # production environment
 FROM nginx:stable-alpine
