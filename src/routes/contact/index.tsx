@@ -1,4 +1,4 @@
-import { component$, useRef, useStore, useWatch$ } from "@builder.io/qwik";
+import { component$, useSignal, useStore, useWatch$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import { Button } from "~/components/Buttons/Buttons";
 import { send } from '@emailjs/browser';
@@ -6,7 +6,7 @@ import { send } from '@emailjs/browser';
 
 export default component$(() => {
     const state = useStore({ name: "", email: "", msg: "", submit: false, error: "", success: false });
-    const form = useRef();
+    const form = useSignal<Element>();
 
     useWatch$(({ track }) => {
         track(() => state.submit);
@@ -45,7 +45,7 @@ export default component$(() => {
 
     });
     return (
-        <div ref={form} onSubmit$={(e) => console.log(e)} className={`max-w-6xl pt-10 rounded-xl flex flex-col gap-5 bg-back2 mt-10 p-5 m-auto`}>
+        <div ref={form} onSubmit$={(e) => console.log(e)} className={`max-w-6xl pt-10 rounded-xl sm:mx-auto mx-5 flex flex-col gap-5 bg-back2 mt-10 p-5 m-auto`}>
             <h1 className="text-3xl">💬 Contact</h1>
             <p className="text-gray-300">If you have any questions, feel free to send me message.</p>
             {state.error.length ? (

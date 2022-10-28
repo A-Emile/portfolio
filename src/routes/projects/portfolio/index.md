@@ -2,5 +2,5 @@
 title: Portfolio
 ---
 
-![portfolio.png](https://cloud-a-emile.dedyn.io/s/gNBXTLXQSrRD8jR/download/portfolio.png)
+![Cover image](/projects/pp/cover.png)
 # [My personal portfolio website](https://github.com/A-Emile/portfolio)

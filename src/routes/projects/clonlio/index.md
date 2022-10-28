@@ -2,5 +2,5 @@
 title: Clonlio
 ---
 
-![Clonlio.jpg](https://cloud-a-emile.dedyn.io/s/sPHSTZsXn2WGjpm/download/clonlio.png)
+![Cover image](/projects/clonlio/cover.png)
 # [Clonlio](https://github.com/A-Emile/clonlio)
