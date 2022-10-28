@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 import { DocumentHead, Link } from '@builder.io/qwik-city';
 import { BrandCard } from '../components/icons/BrandCard';
 import { Button } from '../components/Buttons/Buttons';
-import ProjectList from '../components/projects/ProjectList';
+import ProjectList from '../components/Projects/ProjectList';
 export default component$(() => {
   return (
     <div className={`pt-10 max-w-6xl p-5 m-auto`}>
