@@ -7,3 +7,24 @@
     --bg-color: #111827;
     --bg-color-secondary: #172135;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2a3750;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3e4a5f;
+}
