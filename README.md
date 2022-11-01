@@ -7,7 +7,7 @@ docker pull emile17/portfolio
 ```
 ## Run docker image
 ```
-docker run -d --restart=always --name portfolio -p 3000:80 a-emile-portfolio
+docker run -d --restart=always --name portfolio -p 3000:80 emile17/portfolio
 ```
 ## Build Docker Image
 ```
