@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { BlogPostProps } from "~/types/Types";
 import { BlogCard } from "./BlogCard";
 export const BlogList = component$(({ posts }: { posts: BlogPostProps[] }) => (
-    <ul className='flex flex-col gap-3'>
+    <ul className='flex flex-col gap-3 animate__animated animate__fadeIn'>
         {posts && posts.map((post) => (
             <BlogCard href={"/blog/posts/" + post.slug} title={post.title} img={post.cover} desc={post.description} />
         ))}

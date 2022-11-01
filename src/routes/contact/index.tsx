@@ -1,12 +1,10 @@
-import { component$, useSignal, useStore, useWatch$ } from "@builder.io/qwik";
+import { component$, useStore, useWatch$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import { Button } from "~/components/Buttons/Buttons";
 import { send } from '@emailjs/browser';
 
-
 export default component$(() => {
     const state = useStore({ name: "", email: "", msg: "", submit: false, error: "", success: false });
-    const form = useSignal<Element>();
 
     useWatch$(({ track }) => {
         track(() => state.submit);
@@ -45,21 +43,31 @@ export default component$(() => {
 
     });
     return (
-        <div ref={form} onSubmit$={(e) => console.log(e)} className={`max-w-6xl pt-10 rounded-xl sm:mx-auto mx-5 flex flex-col gap-5 bg-back2 mt-10 p-5 m-auto`}>
-            <h1 className="text-3xl">💬 Contact</h1>
-            <p className="text-gray-300">If you have any questions, feel free to send me message.</p>
-            {state.error.length ? (
-                <div className="text-red-500">{state.error}</div>
-            ) : ""}
-            {state.success ? <p className="text-green-400">Email send successfully</p> : ""}
-            <div className="w-full flex flex-col gap-5 max-w-sm">
-                <input onInput$={(event) => (state.name = (event.target as HTMLInputElement).value)} type="text" placeholder="Name" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
-                <input onInput$={(event) => (state.email = (event.target as HTMLInputElement).value)} type="email" placeholder="Email" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
+        <>
+            <div onSubmit$={(e) => console.log(e)} className={`max-w-6xl pt-10 rounded-xl sm:mx-auto mx-5 flex flex-col gap-5 bg-back2 mt-10 p-5 m-auto animate__animated animate__fadeIn`}>
+                {state.success &&
+                    <div className={`bg-green-500 -mt-5 bg-opacity-50 rounded p-5 text-lg items-center animate__animated flex animate__backInDown`}>
+                        <p className="flex-grow">Message was send successfully</p>
+                        <a className="transition-colors rounded-lg p-1 font-semibold text-blue-300 hover:bg-white hover:bg-opacity-10 px-5" href="/">Back to Homapage</a>
+                    </div>
+                }
+                {!state.success &&
+                    <>
+                        <h1 className="text-3xl">💬 Contact</h1>
+                        <p className="text-gray-300">If you have any questions, feel free to send me message.</p>
+                        {state.error.length ? (
+                            <div className="text-red-500">{state.error}</div>
+                        ) : ""}
+                        <div className="w-full flex flex-col gap-5 max-w-sm">
+                            <input onInput$={(event) => (state.name = (event.target as HTMLInputElement).value)} type="text" placeholder="Name" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
+                            <input onInput$={(event) => (state.email = (event.target as HTMLInputElement).value)} type="email" placeholder="Email" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
+                        </div>
+                        <textarea onInput$={(event) => (state.msg = (event.target as HTMLInputElement).value)} placeholder="Message" class="bg-transparent border-2 border-primary border-opacity-50 rounded"></textarea>
+                        <Button onClick$={() => state.submit = true} text="Send" />
+                        <Button onClick$={() => state.success = true} text="Send" />
+                    </>}
             </div>
-            <textarea onInput$={(event) => (state.msg = (event.target as HTMLInputElement).value)} placeholder="Message" class="bg-transparent border-2 border-primary border-opacity-50 rounded"></textarea>
-            <Button onClick$={() => state.submit = true} text="Send" />
-
-        </div>
+        </>
     )
 })
 

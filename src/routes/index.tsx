@@ -7,17 +7,15 @@ export default component$(() => {
   return (
     <div className={`pt-10 max-w-6xl p-5 m-auto`}>
       <div className='mb-16'>
-        <h1 className='text-4xl mb-2'>👋 Hello!</h1>
-        <p className='mb-5'>I'm a web developer and server administrator from Germany</p>
-        <div className='animate__animated animate__rubberBand'>
+        <h1 className='text-5xl mb-3 font-bold'>Anatole Gonon</h1>
+        <p className='mb-5 text-gray-400'>Web developer and server administrator from Germany</p>
         <Link href='/contact'>
-          <Button text={"Contact me"}/>
+          <Button className='animate__animated animate__jackInTheBox' text={"Contact me"}/>
         </Link>
-        </div>
       </div>
       <ProjectList />
-      <h3 className='text-lg mt-10 font-semibold mb-3'>Languages I speak:</h3>
-      <div className='flex gap-5 w-full justify-start flex-wrap mb-5'>
+      <h3 className='text-lg mt-20 font-semibold mb-3'>Technologies I use</h3>
+      <div className='flex gap-5 w-full justify-start flex-wrap mb-5 animate__animated animate__fadeIn'>
         <BrandCard href='https://www.javascript.com/' name='Java Script' src='/icons/javascript.png' />
         <BrandCard href='https://reactjs.org/' name='React' src='/icons/react.png' />
         <BrandCard href='https://nextjs.org/' name='Next.js' src='/icons/next.webp' />
