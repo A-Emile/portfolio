@@ -9,8 +9,7 @@
 }
 
 .project img {
-    border: 3px solid var(--primary-color);
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
 
 .ProjectList img {

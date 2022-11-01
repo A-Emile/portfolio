@@ -64,7 +64,6 @@ export default component$(() => {
                         </div>
                         <textarea onInput$={(event) => (state.msg = (event.target as HTMLInputElement).value)} placeholder="Message" class="bg-transparent border-2 border-primary border-opacity-50 rounded"></textarea>
                         <Button onClick$={() => state.submit = true} text="Send" />
-                        <Button onClick$={() => state.success = true} text="Send" />
                     </>}
             </div>
         </>
