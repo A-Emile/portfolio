@@ -9,9 +9,11 @@ export default component$(() => {
       <div className='mb-16'>
         <h1 className='text-4xl mb-2'>👋 Hello!</h1>
         <p className='mb-5'>I'm a web developer and server administrator from Germany</p>
+        <div className='animate__animated animate__rubberBand'>
         <Link href='/contact'>
-          <Button text={"Contact me"} animate='animate-bounce'/>
+          <Button text={"Contact me"}/>
         </Link>
+        </div>
       </div>
       <ProjectList />
       <h3 className='text-lg mt-10 font-semibold mb-3'>Languages I speak:</h3>
