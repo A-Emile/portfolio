@@ -73,10 +73,10 @@
     source-map "0.7.4"
     vfile "5.3.5"
 
-"@builder.io/qwik@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@builder.io/qwik/-/qwik-0.12.0.tgz#82f1899f90953ebcdae176b16c7ce22886a43508"
-  integrity sha512-iIsbGO8bZhOMOJ/MmHcaXdsWWVCQIKD1LNQTERtePA695RB3jlmj7HQq4wMSNRRFEdeMKB2t/vmYFDjRJQWRNw==
+"@builder.io/qwik@0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@builder.io/qwik/-/qwik-0.12.1.tgz#77a7bde7ff96cca9bd72e20797744dfd7eaeee50"
+  integrity sha512-ePxm9tr6qa+cNySuIhXOElozkkqdRfyPvEPEV659QJSq704C031/VC0S2lqqvKsc9+ZogBlejGuYWLmtRrsT6w==
 
 "@cush/relative@^1.0.0":
   version "1.0.0"
