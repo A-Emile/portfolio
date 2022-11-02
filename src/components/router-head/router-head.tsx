@@ -24,6 +24,7 @@ export const RouterHead = component$(() => {
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/og.svg" />
       <meta property="og:url" content="https://a-emile.dedyn.io" />
+      <meta name="description" content="Portfolio from Anatole Gonon" />
 
       {head.meta.map((m) => (
         <meta {...m} />

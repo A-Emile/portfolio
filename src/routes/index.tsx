@@ -8,7 +8,7 @@ export default component$(() => {
     <div className={`pt-10 max-w-6xl p-5 m-auto`}>
       <div className='mb-16 flex sm:flex-row flex-col gap-5'>
       <div>
-          <img width={175} className={"overflow-hidden rounded-full sm:w-[175px] w-20 mt-2"} src='/A-Emile.jpg'/>
+          <img alt='image of Anatole' width={175} height={175} className={"overflow-hidden rounded-full sm:w-[175px] w-20 mt-2"} src='/A-Emile.webp'/>
         </div>
         <div>
           <h1 className='sm:text-5xl text-3xl sm:mb-3 font-bold'>Anatole Gonon</h1>
@@ -19,7 +19,7 @@ export default component$(() => {
         </div>
       </div>
       <ProjectList />
-      <h3 className='text-lg mt-20 font-semibold mb-3'>Technologies I use</h3>
+      <h1 className='text-lg mt-20 font-semibold mb-3'>Technologies I use</h1>
       <div className='flex gap-5 w-full justify-start flex-wrap mb-5 animate__animated animate__fadeIn'>
         <BrandCard href='https://www.javascript.com/' name='Java Script' src='/icons/javascript.png' />
         <BrandCard href='https://reactjs.org/' name='React' src='/icons/react.png' />

@@ -1,0 +1,9 @@
+:root {
+    --primary-color: rgb(11, 202, 236);
+    --bg-color: white;
+    --bg-color-secondary: #dde9ff;
+    --text-color: rgb(156, 175, 171);
+    --color: rgb(61, 61, 61);
+    --header-color: rgb(63, 63, 63);
+    --nav-link-color: rgba(0, 0, 0, 0.7);
+}

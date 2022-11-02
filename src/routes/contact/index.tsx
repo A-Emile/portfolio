@@ -43,8 +43,8 @@ export default component$(() => {
 
     });
     return (
-        <>
-            <div onSubmit$={(e) => console.log(e)} className={`max-w-6xl pt-10 rounded-xl sm:mx-auto mx-5 flex flex-col gap-5 bg-back2 mt-10 p-5 m-auto animate__animated animate__fadeIn`}>
+        <div className="sm:px-3">
+            <div onSubmit$={(e) => console.log(e)} className={`max-w-6xl pt-10 rounded-xl mx-auto flex flex-col gap-5 sm:bg-back2 mt-10 p-5 m-auto animate__animated animate__fadeIn`}>
                 {state.success &&
                     <div className={`bg-green-500 -mt-5 bg-opacity-50 rounded p-5 text-lg items-center animate__animated flex animate__backInDown`}>
                         <p className="flex-grow">Message was send successfully</p>
@@ -54,11 +54,11 @@ export default component$(() => {
                 {!state.success &&
                     <>
                         <h1 className="text-3xl">💬 Contact</h1>
-                        <p className="text-gray-300">If you have any questions, feel free to send me message.</p>
+                        <p>If you have any questions, feel free to send me message.</p>
                         {state.error.length ? (
                             <div className="text-red-500">{state.error}</div>
                         ) : ""}
-                        <div className="w-full flex flex-col gap-5 max-w-sm">
+                        <div className="w-full flex flex-col gap-5 sm:max-w-sm">
                             <input onInput$={(event) => (state.name = (event.target as HTMLInputElement).value)} type="text" placeholder="Name" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
                             <input onInput$={(event) => (state.email = (event.target as HTMLInputElement).value)} type="email" placeholder="Email" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
                         </div>
@@ -66,7 +66,7 @@ export default component$(() => {
                         <Button onClick$={() => state.submit = true} text="Send" />
                     </>}
             </div>
-        </>
+        </div>
     )
 })
 
