@@ -9,7 +9,7 @@ export default component$(() => {
       <nav className='p-5 border-b items-center px-7 border-back2 flex max-w-6xl m-auto'>
         <a href='/'><h1 className='font-bold text-2xl'>A-Emile</h1></a>
         <div className='flex-grow justify-start' />
-        <button className={`z-20 sm:hidden flex flex-col gap-2 relative`} onClick$={() => store.menu = !store.menu}>
+        <button title={`${store.menu ? "close" : "open"} menu`} className={`z-20 sm:hidden flex flex-col gap-2 relative`} onClick$={() => store.menu = !store.menu}>
           <div className={`w-6 h-0.5 transition-transform bg-gray-300 ${store.menu && `rotate-45 translate-y-[0.325rem]`}`} />
           <div className={`w-6 h-0.5 transition-transform bg-gray-300 ${store.menu && `-rotate-45 -translate-y-[0.325rem]`}`} />
         </button>

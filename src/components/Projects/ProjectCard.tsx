@@ -16,7 +16,7 @@ export const ProjectCard = component$((props: ItemProps) => {
                 <div className="bg-back1 rounded-lg p-5 h-full flex flex-col">
                     <h1 className="text-xl font-semibold">{props.title}</h1>
                     <p className="flex-grow mb-3">{props.desc}</p>
-                    <img alt={`cover of ${props.title}`} className="overflow-hidden rounded-xl" width={400} height={220} src={props.img} />
+                    <img alt="project cover image" className="overflow-hidden rounded-xl" width={400} height={220} src={props.img} />
                 </div>
             </div>
         </Link>
