@@ -5,13 +5,11 @@ import Header from '../components/header/header';
 export default component$(() => {
   return (
     <>
-      <div className='flex flex-col min-h-screen bg-back1'>
-        <Header />
-        <main className='flex-grow'>
-          <Slot />
-        </main>
-        <Footer />
-      </div>
+      <Header />
+      <main lang='de' className='flex-grow'>
+        <Slot />
+      </main>
+      <Footer />
     </>
   );
 });

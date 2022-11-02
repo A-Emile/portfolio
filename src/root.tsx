@@ -18,7 +18,7 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <RouterHead />
       </head>
-      <body lang="en">
+      <body lang="en" className='flex flex-col min-h-screen bg-back1'>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
