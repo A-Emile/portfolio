@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --primary-color: rgb(14, 165, 233);
-    --bg-color: #111827;
-    --bg-color-secondary: #172135;
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -27,4 +21,53 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #3e4a5f;
+}
+
+h1 {
+    color: var(--header-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+.nav-link {
+    color: var(--nav-link-color);
+}
+
+main {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

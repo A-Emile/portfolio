@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import { DocumentHead } from '@builder.io/qwik-city';
 import { BrandCard } from '../components/icons/BrandCard';
-import { Button } from '../components/Buttons/Buttons';
+import { Button } from '../components/Button/Button';
 import ProjectList from '../components/Projects/ProjectList';
 export default component$(() => {
   return (
@@ -12,9 +12,9 @@ export default component$(() => {
         </div>
         <div>
           <h1 className='sm:text-5xl text-3xl sm:mb-3 font-bold'>Anatole Gonon</h1>
-          <p className='sm:mb-5 text-gray-400'>Web developer and server administrator from Germany</p>
+          <p className='sm:mb-5'>Web developer and server administrator from Germany</p>
           <a href='/contact'>
-            <Button className='animate__animated animate__jackInTheBox' text={"Contact me"} />
+            <Button text={"Contact me"} />
           </a>
         </div>
       </div>

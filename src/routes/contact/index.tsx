@@ -1,6 +1,6 @@
 import { component$, useStore, useWatch$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
-import { Button } from "~/components/Buttons/Buttons";
+import { Button } from "~/components/Button/Button";
 import { send } from '@emailjs/browser';
 
 export default component$(() => {
