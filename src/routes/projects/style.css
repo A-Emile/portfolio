@@ -2,6 +2,11 @@
     font-size: 100%;
 }
 
+.project {
+    animation: fadein 0.5s;
+    color: var(--color);
+}
+
 .project p {
     margin-bottom: 1.15rem;
     font-size: 1.2em;
