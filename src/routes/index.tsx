@@ -5,27 +5,37 @@ import { Button } from '../components/Button/Button';
 import ProjectList from '../components/Projects/ProjectList';
 export default component$(() => {
   return (
-    <div className={`pt-10 max-w-6xl p-5 m-auto`}>
-      <div className='mb-16 flex sm:flex-row flex-col gap-5'>
-      <div>
-          <img alt='image of Anatole' width={175} height={175} className={"overflow-hidden rounded-full sm:w-[175px] w-20 mt-2"} src='/A-Emile.webp'/>
+    <div className={`p-5 pt-10 m-auto max-w-6xl`}>
+      <div className='flex flex-col gap-5 mb-16 sm:flex-row'>
+        <div>
+          <img alt='image of Anatole' width={175} height={175} className={"overflow-hidden mt-2 w-20 rounded-full sm:w-[175px]"} src='/A-Emile.webp' />
         </div>
         <div>
-          <h1 className='sm:text-5xl text-3xl sm:mb-3 font-bold'>Anatole Gonon</h1>
-          <p className='sm:mb-5'>Web developer and server administrator from Germany</p>
+          <h1 className='text-3xl font-bold sm:text-5xl sm:mb-3'>Anatole Gonon</h1>
+          <div className='flex gap-3 items-center sm:mb-6 '>
+            <p>Web Designer aus </p>
+            <div className='flex flex-col'>
+              <div className='w-6 h-1.5 bg-gray-900' />
+              <div className='w-6 h-1.5 bg-red-500' />
+              <div className='w-6 h-1.5 bg-yellow-500' />
+            </div>
+          </div>
           <a href='/contact'>
-            <Button text={"Contact me"} />
+            <Button text={"Kontakt"} />
           </a>
         </div>
       </div>
       <ProjectList />
-      <h1 className='text-lg mt-20 font-semibold mb-3'>Technologies I use</h1>
-      <div className='flex gap-5 w-full justify-start flex-wrap mb-5 animate__animated animate__fadeIn'>
+      <h1 className='mt-20 mb-3 text-lg font-semibold'>Technologien, die ich verwende</h1>
+      <div className='flex flex-wrap gap-5 justify-start mb-5 w-full animate__animated animate__fadeIn'>
+        <BrandCard size={48} href='https://en.wikipedia.org/wiki/HTML5' name='HTML' src='/icons/html.svg' />
+        <BrandCard size={48} href='https://en.wikipedia.org/wiki/CSS' name='CSS' src='/icons/css.svg' />
         <BrandCard href='https://www.javascript.com/' name='Java Script' src='/icons/javascript.png' />
         <BrandCard href='https://reactjs.org/' name='React' src='/icons/react.png' />
         <BrandCard href='https://nextjs.org/' name='Next.js' src='/icons/next.webp' />
         <BrandCard href='https://qwik.builder.io/' name='qwik' src='/icons/qwik.svg' />
         <BrandCard href='https://tailwindcss.com/' name='Tailwind CSS' src='/icons/tailwind.png' />
+        <BrandCard href='https://wordpress.org/' color='red' name='WordPoress' src='/icons/wordpress.svg' />
       </div>
     </div>
   );
