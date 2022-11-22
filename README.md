@@ -1,4 +1,5 @@
 # Portfolio
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/a-emile/portfolio/ci?label=docker%20build)
 
 My personal portfolio website
 ## Pull Docker Image
