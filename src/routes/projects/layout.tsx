@@ -5,7 +5,7 @@ import styles from './style.css?inline';
 export default component$(() => {
   useStyles$(styles)
   return (
-    <div class={"project pt-10 max-w-6xl p-5 m-auto"}>
+    <div class={"p-5 pt-10 m-auto max-w-6xl project"}>
       <Slot />
     </div>
   );
@@ -13,6 +13,6 @@ export default component$(() => {
 
 export const head: DocumentHead = ({ head }) => {
   return {
-    title: `${head.title} - A-Emile`,
+    title: `${head.title} - Anatole Gonon`,
   };
 };

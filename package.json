@@ -23,8 +23,8 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.12.1",
-    "@builder.io/qwik-city": "0.0.118",
+    "@builder.io/qwik": "0.14.0",
+    "@builder.io/qwik-city": "0.0.124",
     "@emotion/react": "11.9.3",
     "@emotion/server": "11.4.0",
     "@emotion/styled": "11.9.3",
@@ -33,7 +33,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
     "@types/eslint": "8.4.6",
-    "@types/node": "latest",
+    "@types/node": "^18.11.9",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "@typescript-eslint/eslint-plugin": "5.37.0",

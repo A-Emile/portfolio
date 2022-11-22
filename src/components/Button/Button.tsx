@@ -10,7 +10,7 @@ interface ButtonProps {
 }
 
 export const Button = component$(({ ...props }: ButtonProps) => (
-    <button {...props} className={`px-5 py-3 mt-5 active:translate-y-0.5 text-white font-semibold text-lg rounded-md bg-primary ${props.className}`}>
+    <button {...props} className={`px-8 py-3 mt-5 active:translate-y-0.5 hover:scale-[1.02] transition-transform text-white font-semibold text-lg rounded-md bg-primary ${props.className}`}>
         {props.text}
     </button>
 ))

@@ -5,7 +5,8 @@ interface BrandCardProps {
     size?: number | string,
     src: string,
     name: string,
-    href?: string
+    href?: string,
+    color?: string
 }
 
 export const BrandCard = component$(({ size = 64, ...props }: BrandCardProps) => (
