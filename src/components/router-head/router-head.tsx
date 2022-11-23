@@ -11,6 +11,7 @@ export const RouterHead = component$(() => {
   return (
     <>
       <title>{head.title}</title>
+      <meta name="google-site-verification" content="xjzvkg_ntbI7laCH1Fb6HTAaWOo2T4oQOXBEPsvzXcI" />
       <meta prefix="og:http://ogp.me/ns#" />
       <link rel="canonical" href={loc.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
