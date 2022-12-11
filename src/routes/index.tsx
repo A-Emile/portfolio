@@ -12,15 +12,10 @@ export default component$(() => {
         </div>
         <div>
           <h1 className='text-3xl font-bold sm:text-5xl sm:mb-3'>Anatole Gonon</h1>
-          <div className='flex gap-3 items-center sm:mb-6 '>
+          <div className='flex gap-3 items-center sm:mb-6 max-w-3xl'>
             <p>
             Hi! Mein Name ist Anatole und ich bin ein freiberuflicher Web- und Mobilentwickler mit einer Leidenschaft für die Schaffung eleganter und funktionaler digitaler Erlebnisse. Mit über 4 Jahren Erfahrung habe ich meine Fähigkeiten in einer Vielzahl von Programmiersprachen und Frameworks verfeinert, einschließlich React, Wordpress und Flutter. Ich bin ständig bestrebt, über die neuesten Entwicklungen in der Welt der Web- und Mobilentwicklung auf dem Laufenden zu bleiben, und bin immer auf der Suche nach neuen und interessanten Projekten, an denen ich arbeiten kann. Egal, ob Sie eine neue Website von Grund auf neu erstellen, Ihre bestehende Website für mobile Geräte optimieren oder eine hochmoderne mobile App entwickeln möchten, ich bin zuversichtlich, dass ich Ihnen helfen kann, Ihre Vision zum Leben zu erwecken. Vielen Dank, dass Sie mich für Ihr Projekt in Betracht ziehen!
             </p>
-            <div className='flex flex-col'>
-              <div className='w-6 h-1.5 bg-gray-900' />
-              <div className='w-6 h-1.5 bg-red-500' />
-              <div className='w-6 h-1.5 bg-yellow-500' />
-            </div>
           </div>
           <a href='/contact'>
             <Button text={"Kontakt"} />
