@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <header>
       <nav className='flex items-center p-5 px-7 m-auto max-w-6xl border-b border-back2'>
-        <a href='/'><h1 className='text-2xl font-bold'>Anatole</h1></a>
+        <a href='/'><h1 className='text-2xl font-bold'>A-Emile</h1></a>
         <div className='flex-grow justify-start' />
         <button title={`${store.menu ? "close" : "open"} menu`} className={`flex relative z-20 flex-col gap-2 sm:hidden`} onClick$={() => store.menu = !store.menu}>
           <div className={`w-6 h-0.5 transition-transform bg-gray-300 ${store.menu && `rotate-45 translate-y-[0.325rem]`}`} />
