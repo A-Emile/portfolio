@@ -11,17 +11,17 @@ export default component$(() => {
         if (state.submit == true) {
             if (state.name.length < 3) {
                 state.submit = false
-                state.error = "Name too short"
+                state.error = "Name zu kurz"
                 return
             }
             if (state.email.length < 10) {
                 state.submit = false
-                state.error = "Invalid email"
+                state.error = "Ungültige email"
                 return
             }
             if (state.msg.length < 20) {
                 state.submit = false
-                state.error = "Message too short"
+                state.error = "MNachricht zu kurz"
                 return
             }
             if (state.success) {
@@ -47,14 +47,14 @@ export default component$(() => {
             <div onSubmit$={(e) => console.log(e)} className={`max-w-6xl pt-10 rounded-xl mx-auto flex flex-col gap-5 sm:bg-back2 mt-10 p-5 m-auto animate__animated animate__fadeIn`}>
                 {state.success &&
                     <div className={`bg-green-500 -mt-5 bg-opacity-50 rounded p-5 text-lg items-center animate__animated flex animate__backInDown`}>
-                        <p className="flex-grow">Message was send successfully</p>
-                        <a className="transition-colors rounded-lg p-1 font-semibold text-blue-300 hover:bg-white hover:bg-opacity-10 px-5" href="/">Back to Homapage</a>
+                        <p className="flex-grow">Nachricht wurde erfolgreich versendet</p>
+                        <a className="transition-colors rounded-lg p-1 font-semibold text-blue-300 hover:bg-white hover:bg-opacity-10 px-5" href="/">Zurück zur Startseite</a>
                     </div>
                 }
                 {!state.success &&
                     <>
-                        <h1 className="text-3xl">💬 Contact</h1>
-                        <p>If you have any questions, feel free to send me message.</p>
+                        <h1 className="text-3xl">💬 Kontakt</h1>
+                        <p></p>
                         {state.error.length ? (
                             <div className="text-red-500">{state.error}</div>
                         ) : ""}
@@ -63,7 +63,7 @@ export default component$(() => {
                             <input onInput$={(event) => (state.email = (event.target as HTMLInputElement).value)} type="email" placeholder="Email" class="bg-transparent border-2 border-primary border-opacity-50 rounded" />
                         </div>
                         <textarea onInput$={(event) => (state.msg = (event.target as HTMLInputElement).value)} placeholder="Message" class="bg-transparent border-2 border-primary border-opacity-50 rounded"></textarea>
-                        <Button onClick$={() => state.submit = true} text="Send" />
+                        <Button onClick$={() => state.submit = true} text="Senden" />
                     </>}
             </div>
         </div>
@@ -71,5 +71,5 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = {
-    title: 'Contact - A-Emile',
+    title: 'Kontakt - A-Emile',
 };
